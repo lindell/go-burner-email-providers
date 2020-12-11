@@ -1,0 +1,64 @@
+name: Daily list sync
+
+on:
+  schedule:
+    - cron: "30 15 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: "^1.15.5"
+
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: '0'
+
+      - name: Generate new list
+        run: go run tools/generate-list/main.go
+
+      - name: Test
+        run: go test ./...
+
+      - name: Check for list changes
+        continue-on-error: true
+        id: changes
+        run: git update-index --refresh && git diff-index HEAD
+
+      - name: Dump steps context
+        env:
+          STEPS_CONTEXT: ${{ toJson(steps) }}
+        run: echo "$STEPS_CONTEXT"
+
+      - name: Generate new readme
+        if: steps.changes.outcome != 'success'
+        run: go run tools/generate-readme/main.go
+
+      - name: Commit changes
+        if: steps.changes.outcome != 'success'
+        run: |
+          git checkout main --
+          git config user.email "johan@lindell.me"
+          git config user.name "Johan Lindell"
+          git add README.md
+          git add burner/
+          git commit -m "chore: updated domain list"
+
+      - name: Push changes
+        if: steps.changes.outcome != 'success'
+        run: |
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+          git push
+
+      - name: Bump version and push tag
+        uses: anothrNick/github-tag-action@1.26.0
+        if: steps.changes.outcome != 'success'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          WITH_V: true
+          RELEASE_BRANCHES: main
+          DEFAULT_BUMP: patch
