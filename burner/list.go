@@ -3,7 +3,6 @@
 package burner
 
 var domains = map[string]struct{}{
-	"0-180.com": {},
 	"0-30-24.com": {},
 	"0-420.com": {},
 	"0-900.com": {},
