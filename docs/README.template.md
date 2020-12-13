@@ -1,5 +1,7 @@
 go-burner-email-providers
 ----
+[![Go Reference](https://pkg.go.dev/badge/github.com/lindell/go-burner-email-providers/burner.svg)](https://pkg.go.dev/github.com/lindell/go-burner-email-providers/burner)
+
 
 Go package that detects burner (temporary) emails based on the community maintained [wesbos/burner-email-providers](https://github.com/wesbos/burner-email-providers) list.
 
@@ -19,11 +21,17 @@ import (
 )
 
 func main() {
-    isBurnerEmail := burner.IsBurnerEmail("test@temp-mail.org")
-    fmt.Println(isBurnerEmail)
+	isBurnerEmail := burner.IsBurnerEmail("test@temp-mail.org")
+	fmt.Println(isBurnerEmail) // true
 
-    isBurnerDomain := burner.IsBurnerDomain("temp-mail.org")
-    fmt.Println(isBurnerDomain)
+	isBurnerEmail = burner.IsBurnerEmail("johan@gmail.com")
+	fmt.Println(isBurnerEmail) // false
+
+	isBurnerDomain := burner.IsBurnerDomain("temp-mail.org")
+	fmt.Println(isBurnerDomain) // true
+
+	isBurnerEmail = burner.IsBurnerDomain("gmail.com")
+	fmt.Println(isBurnerEmail) // false
 }
 ```
 
