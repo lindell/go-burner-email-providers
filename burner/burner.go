@@ -1,4 +1,4 @@
-// This package provides functions to check if the domain of an email or a domain is in the community maintained https://github.com/wesbos/burner-email-providers burner list.
+// Package burner provides functions to check if the domain of an email or a domain is in the community maintained https://github.com/wesbos/burner-email-providers burner list.
 package burner
 
 import (
