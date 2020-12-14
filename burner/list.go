@@ -3,6 +3,8 @@
 package burner
 
 var domains = map[string]struct{}{
+	"0-00.usa.cc": {},
+	"0-180.com": {},
 	"0-30-24.com": {},
 	"0-420.com": {},
 	"0-900.com": {},
@@ -67281,6 +67283,7 @@ var domains = map[string]struct{}{
 	"nediyor.net": {},
 	"nediyor.org": {},
 	"nedmin.com": {},
+	"nedoz.com": {},
 	"nedrk.com": {},
 	"neds.cards": {},
 	"neds.cash": {},
