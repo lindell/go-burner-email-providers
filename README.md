@@ -44,6 +44,6 @@ Since the list of domains is quite large, the binary size and memory usage is no
 The increase of using this package is:
 | Where | Size diff |
 | -| -|
-| On Disc | 3.47 Mb |
+| On Disc | 3.48 Mb |
 | Memory | 4.77 Mb |
 
