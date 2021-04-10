@@ -65646,6 +65646,7 @@ var domains = map[string]struct{}{
 	"mailpm.live": {},
 	"mailpoly.xyz": {},
 	"mailpooch.com": {},
+	"mailpoof.com": {},
 	"mailpost.comx.cf": {},
 	"mailpost.ga": {},
 	"mailpost.gq": {},
