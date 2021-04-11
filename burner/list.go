@@ -45761,6 +45761,7 @@ var domains = map[string]struct{}{
 	"goplmega1.tk": {},
 	"gopo.email": {},
 	"gopoker303.org": {},
+	"goposts.site": {},
 	"gopowerlevel.com": {},
 	"goproaccessories.us": {},
 	"goprovs.com": {},
