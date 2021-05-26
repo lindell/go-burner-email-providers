@@ -63185,6 +63185,7 @@ var domains = map[string]struct{}{
 	"logicielsvinity.com": {},
 	"logiclaser.com": {},
 	"logicpowerbooster.com": {},
+	"logicstreak.com": {},
 	"logike708.cf": {},
 	"login-email.cf": {},
 	"login-email.ga": {},
