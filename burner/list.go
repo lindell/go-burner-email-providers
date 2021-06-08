@@ -75271,7 +75271,6 @@ var domains = map[string]struct{}{
 	"nurturemeal.site": {},
 	"nurturingrecipes.com": {},
 	"nuruvi.com": {},
-	"nus.edu.sg": {},
 	"nusaas.com": {},
 	"nusamart.site": {},
 	"nussc.com": {},
