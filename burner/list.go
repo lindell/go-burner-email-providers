@@ -43235,6 +43235,7 @@ var domains = map[string]struct{}{
 	"gamevillage.org": {},
 	"gamewedota.co.cc": {},
 	"gamexshop.online": {},
+	"gamezalo.com": {},
 	"gamgling.com": {},
 	"gamil.com": {},
 	"gaminators.org": {},
