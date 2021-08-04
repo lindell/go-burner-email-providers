@@ -53576,6 +53576,7 @@ var domains = map[string]struct{}{
 	"instapedia.online": {},
 	"instapixel.com": {},
 	"instaprice.co": {},
+	"instasmail.com": {},
 	"instatienda.com": {},
 	"instator.ru": {},
 	"instatransact.org": {},
