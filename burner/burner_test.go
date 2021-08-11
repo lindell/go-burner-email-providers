@@ -23,8 +23,7 @@ func TestNonBurnerEmails(t *testing.T) {
 func TestBurnerEmails(t *testing.T) {
 	burnerEmails := []string{
 		"test@test.com",
-		"name@001xs.net",
-		"hello@mobx.pub",
+		"name@burnermail.io",
 		"yo@yopmail.com",
 		"abcd.com",
 	}
@@ -52,8 +51,7 @@ func TestNonBurnerDomains(t *testing.T) {
 func TestBurnerDomains(t *testing.T) {
 	burnerEmails := []string{
 		"test.com",
-		"001xs.net",
-		"mobx.pub",
+		"burnermail.io",
 		"yopmail.com",
 	}
 	for _, email := range burnerEmails {
