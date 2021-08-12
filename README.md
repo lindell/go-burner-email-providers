@@ -7,7 +7,7 @@ go-burner-email-providers
 
 Go package that detects burner (temporary) emails based on the community maintained [wesbos/burner-email-providers](https://github.com/wesbos/burner-email-providers) list. This repository is synced daily against that list.
 
-It does currently contain 119,404 domains and the lookup is done with a hash set for instant results.
+It does currently contain 57,016 domains and the lookup is done with a hash set for instant results.
 
 ## Installation
 
@@ -44,6 +44,6 @@ Since the list of domains is quite large, the binary size and memory usage is no
 The increase of using this package is:
 | Where | Size diff |
 | -| -|
-| On Disc | 3.48 Mb |
-| Memory | 4.77 Mb |
+| On Disc | 1.65 Mb |
+| Memory | 2.39 Mb |
 
