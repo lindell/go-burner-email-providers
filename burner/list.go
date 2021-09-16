@@ -44621,6 +44621,7 @@ var domains = map[string]struct{}{
 	"shenqiancun.com": {},
 	"shenshahfood.com": {},
 	"shenshizhan.com": {},
+	"shensufu.com": {},
 	"shepherds-house.com": {},
 	"shequechicago.com": {},
 	"sherepunjabtakeaway.com": {},
