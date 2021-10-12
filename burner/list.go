@@ -3831,6 +3831,7 @@ var domains = map[string]struct{}{
 	"adesktop.com": {},
 	"adfilter.org": {},
 	"adfits.com": {},
+	"adfskj.com": {},
 	"adgento.com": {},
 	"adgloselche.esmtp.biz": {},
 	"adgrant.services": {},
