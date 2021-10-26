@@ -9139,6 +9139,7 @@ var domains = map[string]struct{}{
 	"booaid.com": {},
 	"boobies.pro": {},
 	"boodschappenbezorgen.amsterdam": {},
+	"boofx.com": {},
 	"boogiemunsters.com": {},
 	"book-buzzes.com": {},
 	"book316.com": {},
