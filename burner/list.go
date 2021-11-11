@@ -33755,7 +33755,6 @@ var domains = map[string]struct{}{
 	"mozej.com": {},
 	"mozej.online": {},
 	"mozillafirefox.tk": {},
-	"mozmail.com": {},
 	"mp-j.igg.biz": {},
 	"mp.igg.biz": {},
 	"mp3-cube.com": {},
