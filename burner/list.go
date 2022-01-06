@@ -51708,6 +51708,7 @@ var domains = map[string]struct{}{
 	"uprightbroom.com": {},
 	"uprightbrooms.us": {},
 	"uprsoft.ru": {},
+	"upsdom.com": {},
 	"upskirt-central.com": {},
 	"upskrcnd.ml": {},
 	"upspecul.cf": {},
