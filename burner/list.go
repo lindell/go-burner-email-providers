@@ -48341,6 +48341,7 @@ var domains = map[string]struct{}{
 	"templetonmortgage.net": {},
 	"tempm.cf": {},
 	"tempm.com": {},
+	"tempmail.cn": {},
 	"tempmail.co": {},
 	"tempmail.de": {},
 	"tempmail.eu": {},
