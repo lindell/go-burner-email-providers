@@ -43596,6 +43596,7 @@ var domains = map[string]struct{}{
 	"saubandvor.cf": {},
 	"saubandvor.ga": {},
 	"saubandvor.gq": {},
+	"saucent.online": {},
 	"saucey-one.com": {},
 	"saude-digital.org": {},
 	"saudealternativa.org": {},
