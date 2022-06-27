@@ -32990,6 +32990,7 @@ var domains = map[string]struct{}{
 	"minifieur.com": {},
 	"minikokul.net": {},
 	"minimail.club": {},
+	"minimail.eu.org": {},
 	"minimal.homes": {},
 	"minime.xyz": {},
 	"minimiseapp.com": {},
