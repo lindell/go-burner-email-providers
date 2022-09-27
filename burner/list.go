@@ -17011,6 +17011,7 @@ var domains = map[string]struct{}{
 	"edwardbell62.ml": {},
 	"edwardnmkpro.design": {},
 	"edwardsvillevisioncenter.info": {},
+	"edxplus.com": {},
 	"ee062.com": {},
 	"ee1.pl": {},
 	"ee18269.com": {},
