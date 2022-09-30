@@ -51508,6 +51508,7 @@ var domains = map[string]struct{}{
 	"umprotat.ga": {},
 	"umprotat.gq": {},
 	"umprotat.ml": {},
+	"umrent.com": {},
 	"umrika.com": {},
 	"umrohdulu.com": {},
 	"umss.de": {},
