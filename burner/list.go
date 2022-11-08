@@ -50301,6 +50301,7 @@ var domains = map[string]struct{}{
 	"tradeseze.com": {},
 	"tradeskins.ru": {},
 	"tradeswallet.online": {},
+	"tradetnz.info": {},
 	"tradewithgreg.com": {},
 	"tradewithrichard.com": {},
 	"tradexan.cf": {},
