@@ -11693,6 +11693,7 @@ var domains = map[string]struct{}{
 	"chloride.luk0.com": {},
 	"chmembership.com": {},
 	"chnhh.com": {},
+	"chnlog.com": {},
 	"chnwfsb.com": {},
 	"cho.com": {},
 	"chockandblock.com": {},
