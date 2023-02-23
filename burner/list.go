@@ -35410,6 +35410,7 @@ var domains = map[string]struct{}{
 	"nghiencuuquocte.com": {},
 	"ngjcyu.icu": {},
 	"ngo1.com": {},
+	"ngopy.com": {},
 	"ngplayer.com": {},
 	"ngroove.com": {},
 	"ngstudio.org": {},
