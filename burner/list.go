@@ -12458,6 +12458,7 @@ var domains = map[string]struct{}{
 	"tempmailer.com": {},
 	"tempmailer.de": {},
 	"tempmailer.net": {},
+	"tempmailfree.com": {},
 	"tempmailo.com": {},
 	"tempmails.cf": {},
 	"tempomail.fr": {},
