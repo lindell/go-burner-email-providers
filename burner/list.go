@@ -2643,7 +2643,6 @@ var domains = map[string]struct{}{
 	"coffeepancakewafflebacon.com": {},
 	"coffeetimer24.com": {},
 	"cognalsearch.com": {},
-	"cognata.com": {},
 	"coieo.com": {},
 	"coin-host.net": {},
 	"coin-hub.net": {},
