@@ -8992,6 +8992,7 @@ var domains = map[string]struct{}{
 	"mymailbox.top": {},
 	"mymailoasis.com": {},
 	"mymailsrv.info": {},
+	"mymaily.lol": {},
 	"mymarketinguniversity.com": {},
 	"mymintinbox.com": {},
 	"mymobilehut.icu": {},
