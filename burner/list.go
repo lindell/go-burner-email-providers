@@ -3524,6 +3524,7 @@ var domains = map[string]struct{}{
 	"decidaenriquecer.com": {},
 	"deckfasli.cf": {},
 	"deckfasli.gq": {},
+	"decline.live": {},
 	"decobar.ru": {},
 	"decode.ist": {},
 	"decodefuar.com": {},
