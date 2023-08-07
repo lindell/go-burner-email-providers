@@ -13101,7 +13101,6 @@ var domains = map[string]struct{}{
 	"swanticket.com": {},
 	"swap-crypto.site": {},
 	"swapinsta.com": {},
-	"swatch.com": {},
 	"sweatmail.com": {},
 	"sweemri.com": {},
 	"sweepstakesforme.com": {},
