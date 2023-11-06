@@ -13550,7 +13550,6 @@ var domains = map[string]struct{}{
 	"natachasteven.com": {},
 	"natafaka.online": {},
 	"natashaferre.com": {},
-	"nate.com": {},
 	"nationalgardeningclub.com": {},
 	"nationwidedebtconsultants.co.uk": {},
 	"naturalnoemylo.ru": {},
