@@ -45,5 +45,5 @@ The increase of using this package is:
 | Where | Size diff |
 | -| -|
 | On Disc | 0.62 Mb |
-| Memory | 0.61 Mb |
+| Memory | 0.62 Mb |
 
