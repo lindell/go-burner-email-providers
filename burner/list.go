@@ -17467,7 +17467,6 @@ var domains = map[string]struct{}{
 	"slipry.net": {},
 	"slissi.site": {},
 	"slix.dev": {},
-	"slmail.me": {},
 	"slopsbox.com": {},
 	"slothmail.net": {},
 	"slotoking.city": {},
