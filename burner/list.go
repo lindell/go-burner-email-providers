@@ -4001,6 +4001,7 @@ var domains = map[string]struct{}{
 	"clonemoi.tk": {},
 	"clonezu.fun": {},
 	"close-room.ru": {},
+	"closetab.email": {},
 	"closurist.com": {},
 	"cloud-mail.id": {},
 	"cloud-mail.net": {},
