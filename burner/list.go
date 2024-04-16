@@ -8080,6 +8080,7 @@ var domains = map[string]struct{}{
 	"glamourbeauty.org": {},
 	"glamourcow.com": {},
 	"glaptopsw.com": {},
+	"glaslack.com": {},
 	"glasrose.de": {},
 	"glassworks.cf": {},
 	"glastore.uno": {},
