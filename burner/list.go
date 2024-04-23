@@ -12520,6 +12520,7 @@ var domains = map[string]struct{}{
 	"mailhubpros.com": {},
 	"mailhz.me": {},
 	"maili.fun": {},
+	"mailify.org": {},
 	"mailimail.com": {},
 	"mailimate.com": {},
 	"mailimpulse.com": {},
