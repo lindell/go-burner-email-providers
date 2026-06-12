@@ -6,10 +6,15 @@ import (
 	"net/http"
 	"os"
 	"path"
+	"sort"
+	"strings"
 	"time"
 )
 
-const emailListURL = "https://raw.githubusercontent.com/wesbos/burner-email-providers/master/emails.txt"
+var emailListURLs = []string{
+	"https://raw.githubusercontent.com/wesbos/burner-email-providers/master/emails.txt",
+	"https://raw.githubusercontent.com/disposable/disposable-email-domains/master/domains.txt",
+}
 
 func main() {
 	if err := run(); err != nil {
@@ -22,14 +27,30 @@ func run() error {
 		Timeout: 30 * time.Second,
 	}
 
-	// Make a request to fetch the email list
-	resp, err := client.Get(emailListURL)
-	if err != nil {
-		return err
-	}
-	defer resp.Body.Close()
+	domains := make(map[string]bool)
 
-	// Open the list file
+	for _, url := range emailListURLs {
+		resp, err := client.Get(url)
+		if err != nil {
+			return fmt.Errorf("fetch %s: %w", url, err)
+		}
+
+		scanner := bufio.NewScanner(resp.Body)
+		for scanner.Scan() {
+			domain := strings.TrimSpace(strings.ToLower(scanner.Text()))
+			if domain != "" && !strings.HasPrefix(domain, "#") {
+				domains[domain] = true
+			}
+		}
+		resp.Body.Close()
+	}
+
+	sorted := make([]string, 0, len(domains))
+	for d := range domains {
+		sorted = append(sorted, d)
+	}
+	sort.Strings(sorted)
+
 	currentPath, err := os.Getwd()
 	if err != nil {
 		return err
@@ -40,20 +61,15 @@ func run() error {
 	}
 	defer file.Close()
 
-	if _, err := fmt.Fprint(file, "// Code generated (see tools/generate-list/main.go) DO NOT EDIT.\n\npackage burner\n\nvar domains = map[string]struct{}{\n"); err != nil {
-		return err
+	fmt.Fprintf(file, "// Code generated (see tools/generate-list/main.go) DO NOT EDIT.\n\npackage burner\n\nvar domains = map[string]struct{}{\n")
+
+	for _, domain := range sorted {
+		fmt.Fprintf(file, "\t\"%s\": {},\n", domain)
 	}
 
-	scanner := bufio.NewScanner(resp.Body)
-	for scanner.Scan() {
-		if _, err := fmt.Fprintf(file, "\t\"%s\": {},\n", scanner.Text()); err != nil {
-			return err
-		}
-	}
+	fmt.Fprintf(file, "}\n")
 
-	if _, err := fmt.Fprintf(file, "}\n"); err != nil {
-		return err
-	}
+	fmt.Printf("Generated %d domains\n", len(sorted))
 
 	return nil
 }
